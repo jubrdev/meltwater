@@ -1,0 +1,21 @@
+<form [formGroup]="keywordForm">
+  <label class="label">Keywords to redact</label>
+  <div class="chip-wrapper">
+    <div
+      *ngFor="let chip of service.keyWords; let i = index"
+      class="chips"
+      (click)="removeKeyword(i)"
+    >
+      {{ chip }} &#9447;
+    </div>
+  </div>
+  <input
+    type="text"
+    placeholder="Enter words or phrases to remove - ex: Hello world 'Boston Red Sox'"
+    formControlName="chipsInput"
+    required
+  />
+  <button (click)="submitForm()" [disabled]="!keywordForm.valid">
+    Add Words
+  </button>
+</form>

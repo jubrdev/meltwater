@@ -1,0 +1,23 @@
+<div class="container" fxLayout="column" fxLayoutAlign="start center">
+  <div fxLayout="column" fxLayoutAlign="start center">
+    <div class="header">brender redactor</div>
+    <div class="sub-header">document text editor</div>
+  </div>
+  <div class="wrapper" fxLayout="column">
+    <div><app-keyword-chips></app-keyword-chips></div>
+    <div>
+      <form [formGroup]="documentForm">
+        <textarea
+          type="text"
+          formControlName="document"
+          col="20"
+          placeholder="Enter document text"
+        ></textarea>
+      </form>
+    </div>
+    <div *ngIf="service.redactedText.length">
+      <div class="label">Redacted text:</div>
+      <div>{{ service.redactedText }}</div>
+    </div>
+  </div>
+</div>

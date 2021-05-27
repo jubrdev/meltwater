@@ -1,0 +1,50 @@
+.chip-wrapper {
+  height: 30px;
+  margin: 10px auto;
+  .chips {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
+    font-family: Helvetica;
+    margin-right: 15px;
+    padding: 4px 10px;
+  }
+}
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  margin-right: 20px;
+  width: 70%;
+}
+
+button {
+  width: 90px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  font-size: 14px;
+  font-family: Helvetica;
+  margin: 10px 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: #8cb385;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    background-color: #7b7a7a;
+    cursor: not-allowed;
+  }
+}

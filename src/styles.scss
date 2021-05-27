@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  font-family: Helvetica;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header {
+  font-family: "Righteous", cursive;
+  font-size: 48px;
+  margin: 72px 0 8px 0;
+  text-align: center;
+}
+.sub-header {
+  font-size: 22px;
+  margin-bottom: 36px;
+}
+.label {
+  font-size: 18px;
+  margin-bottom: 36px;
+}
